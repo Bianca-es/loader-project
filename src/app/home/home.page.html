@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Inicio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Inicio</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <div id="container">
+    <strong>Bienvenido</strong>
+    <br>
+    <br>
+    <p>A continuación podrás visualizar una serie de imágenes simulando un "loader" 
+      <br><br> Presiona el siguiente botón para comenzar </p>
+    <br>
+    <ion-button class="btn-style" (click)="showLoader()"
+    size="default"
+    > Ver loader</ion-button>
+  </div>
+  <app-loader *ngIf="loaderFlag"></app-loader>
+</ion-content>
+
