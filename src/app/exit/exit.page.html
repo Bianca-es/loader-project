@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Salida</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Salida</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+  <div id="exit-container">
+    <p>Las pruebas han terminado, presiona el siguiente botón para volver al inicio </p>
+    <br>
+    <ion-button class="btn-style" (click)="goHome()"
+    size="default"
+    > Ir a inicio</ion-button>
+  </div>
+</ion-content>
